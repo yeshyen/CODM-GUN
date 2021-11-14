@@ -1,0 +1,30 @@
+.dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: mediumspringgreen;
+    color: peru;
+    padding: 5px;
+    box-shadow: 5px 5px 10px blue;
+
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.fade-in {
+    animation-name: fade-in-animation;
+    animation-duration: 5s;
+}
+@keyframes fade-in-animation {
+    from {
+        opacity: 0;
+        transform: rotate(-80deg);
+    }
+    
+    to {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+}
